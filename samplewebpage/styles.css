@@ -1,0 +1,83 @@
+/* styles.css */
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+}
+
+.logo img {
+    width: 50px; /* Adjust logo width */
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    font-size: 18px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Style the header section */
+header {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Style the main content section */
+main {
+    padding: 20px;
+}
+
+.image-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-carousel img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 10px;
+}
+
+/* Style the footer section */
+footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-info h2 {
+    font-size: 20px;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+/* Add more styling as needed */
