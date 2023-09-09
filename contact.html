@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Your Website</title>
+    <style>
+        body {
+            font-weight: bolder;
+            background: url(img/img1.jpg);
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            opacity: 0.9;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <h2 style="text-align: center; color: white;">Contact Us</h2>
+            <p style="color: white; max-width: 200%;">If you have any questions, inquiries, or feedback, please don't hesitate to get in touch with us.</p>
+
+            <form id="contactForm" action="#">
+                <fieldset>
+                    <legend>Contact Us:</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="5" required></textarea><br><br>
+
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const contactform = document.getElementById("contactform");
+
+            contactform.addEventListener("submit", function (event) {
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const message = document.getElementById("message").value;
+                if (!name || !email || !message) {
+                    alert("Please fill in all fields.");
+                    event.preventDefault(); 
+                }
+            });
+        });
+    </script>
+</body>
+</html>
